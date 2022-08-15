@@ -24,6 +24,7 @@ int main(){
      if (count==0)
      {
         candidate=v[i];
+        count=1;
      }
      
     }
