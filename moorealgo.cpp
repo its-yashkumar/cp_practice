@@ -1,5 +1,5 @@
 /*
-                                  Morse Algorithm
+                                  Moore Algorithm
     We take a candidate for majority element and we will count its votes.
     The wrost case votes of majority elemnts are n/2+1 subtract the number of remaining elemnts.
     If vote of a candidate is 0 then it is not a majority element
