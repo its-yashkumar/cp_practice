@@ -1,5 +1,6 @@
 /* A majority element is a element that apprears in an array more than n/2 times.
 n is size of array*/
+/* One initutive approach is that majority element is at the center of sorted array*/
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
