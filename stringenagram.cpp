@@ -10,6 +10,7 @@ Given two strings find whether they are enagrams or not?
 using namespace std;
 int main(){
    vector<int> count1(26),count2(26);
+   //To space just use count1
    string s1="apple";
    string s2="elapp";
    int flag=1;
@@ -20,9 +21,13 @@ int main(){
    for (int i = 0; i < s2.size(); i++)
    {
     count2[s2[i]-'a']++;
+    //When using only count1 
+    //count1[s2[i]-'a']--;
    }
    for (int i = 0; i < 26; i++)
    {
+    //When using only count1 
+    //if(count1[i]!=0)
     if(count1[i]!=count2[i]){
         cout<<"Not an enagram";
         flag=0;
