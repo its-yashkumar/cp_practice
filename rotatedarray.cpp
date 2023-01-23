@@ -15,5 +15,6 @@ using namespace std;
 int main(){
     /*First find the mid index and element then find in which region we are either region 1 or region 2
     First element in region 1 is greater than all elements in region 2*/
+    vector<int> v={5,6,7,8,9,10,1,2,3,4};
     
 }
