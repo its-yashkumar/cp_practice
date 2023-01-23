@@ -25,7 +25,8 @@ int main(){
         int mid=(s+e)/2;
         // cout<<mid;
         if(v[mid]==target){
-            cout<<"found it";
+            cout<<"found it\n";
+            cout<<"The index at which it was found is : "<<mid;
             flag=0;
             break;
         }
