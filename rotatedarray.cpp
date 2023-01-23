@@ -17,20 +17,29 @@ int main(){
     First element in region 1 is greater than all elements in region 2*/
     vector<int> v={5,6,7,8,9,10,1,2,3,4};
     int s=0,e=v.size()-1;
-    int target=0,flag=1;
+    int target=10,flag=1;
     int first=v[0];
+
     while (s<e)
     {
-        int mid=s+e/2;
+        int mid=(s+e)/2;
+        // cout<<mid;
         if(v[mid]==target){
             cout<<"found it";
             flag=0;
             break;
         }
-        if(v[mid]>first){
-              
+        if(v[mid]>=first){
+           s=mid+1;
+        //    cout<<s<<e;   
+        }
+         if(v[mid]<first){
+           e=mid-1;  
+        //    cout<<s<<e; 
         }
     }
-    
+    if(flag==1){
+        cout<<"not found";
+    }
 
 }
